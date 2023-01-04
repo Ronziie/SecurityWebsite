@@ -41,11 +41,11 @@ export default function SidebarMenu() {
     }
 
   return (
-    <div  className='sidebarmenu' style={{ display: 'flex', height: '100vh', overflowY: 'scroll inital' }}>
+    <div  className='sidebarmenu' style={{ display: 'flex', height: '100vh' }}>
       {
       
       isMobile ? 
-      <div className='true' style={{height: '100%', display: 'flex', overflowY:'scroll inital', position:"fixed" }}>
+      <div className='true' style={{height: '100%', display: 'flex' }}>
               <Sidebar image={image}>
                     <Menu>
                       <MenuItem style={{ marginBottom:"50px"}}> 
@@ -83,34 +83,34 @@ export default function SidebarMenu() {
      </div> :
       
       
-      <div className='false' style={{height: '100%', display: 'flex', overflowY:'scroll inital', position: "fixed"}}>
+      <div className='false' style={{height: '100%', display: 'flex', position: "fixed"}}>
             <Sidebar defaultCollapsed={true} collapsedWidth="60px" image={image}>
                 <Menu>
-                  <MenuItem style={{marginTop:"50px", marginBottom:"50px"}}> 
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}> 
                     <RiDashboardFill />  Dashboard
                   </MenuItem>
 
-                  <MenuItem style={{marginTop:"50px", marginBottom:"50px"}}> 
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}> 
                     <CgProfile /> User Profile
                   </MenuItem>
 
-                  <MenuItem style={{marginTop:"50px", marginBottom:"50px"}}> 
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}> 
                       <SiGooglemaps /> Maps
                   </MenuItem>
 
-                  <MenuItem style={{marginTop:"50px", marginBottom:"50px"}}> 
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}> 
                       <MdNotificationsActive /> Notifications
                   </MenuItem>
 
-                  <MenuItem style={{marginTop:"50px", marginBottom:"50px"}}> 
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}> 
                     <BiSupport/> R-Support
                   </MenuItem>
 
-                  <MenuItem style={{marginTop:"50px", marginBottom:"50px"}}>
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}>
                     <TbDeviceAnalytics  />  Analytics
                   </MenuItem>
                   
-                  <MenuItem style={{marginTop:"250px", marginBottom:"50px"}} onClick={returnHome}> 
+                  <MenuItem style={{marginTop:"50px", marginBottom:"50px"}} onClick={returnHome}> 
                     <ImExit  />  Sign Out
                   </MenuItem>
                 </Menu>             
