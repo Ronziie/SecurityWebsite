@@ -1,0 +1,320 @@
+.mainContainer {
+    background: url(stethoscope.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.App {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: black 200px;
+    border-radius: 10px;
+    height: 100vh;
+
+
+}
+
+.App h1 {
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    color: #f1f1f1;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.logo img {
+    width: 100%;
+    height: 90px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+    
+}
+
+.registration {
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.registration h1 {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registration label {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#f1f1f1;
+
+}
+.registration input {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-color: black;
+    background-color: #f1f1f1;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.btn-reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.btn {
+    background-color: #f1f1f1;
+}
+
+#icon {
+    background-image: url(../src/images/username.png);
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+    background-size: contain;
+}
+#icon2 {
+    background-image: url(../src/images/password.png);
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+    background-size: contain;
+}
+
+/*===========TaskList===========*/
+.table {
+    margin-bottom: "0";
+    width: "100%";
+    max-width: "100%";
+    background-color: "transparent";
+    border-spacing: "0";
+    border-collapse: "collapse";
+    overflow-y: "scroll";
+}
+
+/*========Services========*/
+
+.services-container {
+
+    width: 100%;
+    height: 100% !important;
+    background-color: #233;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.carousel-container {
+    border-radius: 20px;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+
+}
+.Carousel-1 {
+    margin: 1px;
+}
+
+.services-description {
+    margin: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-description-title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.services-description-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+}
+.service-card {
+    padding: 0;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.service-card-2 {
+    padding: 0;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.security-benefits-container {
+    /*background-color: white;*/
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    overflow: scroll;
+    margin-bottom: 40px;
+}
+.security-inner-title {
+    color: white;
+}
+.security-inner-container {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 550px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+.security-inner-title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.SBB {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.SBB-icon {
+    font-size: 50px;
+    color: #0693e3;
+}
+
+
+/*======SERVICE FOOTER SECTION =====*/
+.service-footer {
+    height: 500px !important;
+    
+}
+.service-logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.dl, ol, ul, a {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: start;
+    font-size: 20px;
+}
+
+
+.service-title {
+    display: flex;
+    font-size: 20px;
+    color: white !important;
+    margin-left: 40px;
+}
+.thinBar {
+    height: 3px;
+    width: 150px;
+    background-color: white !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.footer-cred-title {
+    display: flex;
+    justify-content: start;
+    float: left;
+    font-size: 30px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.footer-cred-text {
+    display: flex;
+    color: white;
+    float: left;
+    justify-content: start;
+}
+
+/*=======About=US====*/
+
+.about-us {
+    background-color: #233;
+    height: 1000px;
+
+}
+.about-us-title {
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;
+}
+.about-us-content {
+    display: flex;
+
+    border-radius: 50px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+.about-us-text {
+    font-size: 20px; 
+    color: white;
+    text-align: start;
+    padding-top: 50px;
+
+
+}
+
+/*==========sidebar=====*/
+.false {
+    color: red;
+    height: 100vh;
+
+}
+.true {
+    font-size: 200px;
+}

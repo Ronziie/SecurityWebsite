@@ -1,0 +1,100 @@
+/*===========TaskList===========*/
+.table {
+    margin-bottom: "0";
+    width: "100%";
+    max-width: "100%";
+    background-color: "transparent";
+    border-spacing: "0";
+    border-collapse: "collapse";
+
+}
+
+.input {
+    margin-left: 0;
+}
+.todo-container {
+ width: 100%;
+ height: 180px;
+}
+.form {
+    display: flex;
+}
+.btn {
+    float: right;
+    margin-left: 50px;
+    padding: 0;
+}
+#inputBox {
+    height: 40px;
+    width : 100%;
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-family: 'Gilroy';
+    border-radius: 10px;
+    border: solid black;
+}
+
+.box {
+    color: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    height: 50px;
+    border: 0;
+    display: flex;
+    position: relative;
+    font-size: .875rem;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #FFF;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+    margin-top: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+.checkbox {
+    justify-content: center;
+    align-items: center;
+}
+.context {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.editDeleteButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    overflow: hidden;
+
+}
+
+#EditButton {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 25px;
+    margin-right: 20%;
+    overflow: hidden;
+
+}
+
+#DeleteButton {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+    font-size: 25px;
+}
