@@ -7,6 +7,9 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Footer2 from "./Footer2";
 import Send from "@material-ui/icons/Send";
+import { motion } from 'framer-motion';
+import '../Main.css';
+import Particles from "./Particles";
 
 
 
@@ -66,12 +69,15 @@ const InputField = withStyles({
 const Contact = () => {
   const classes = useStyles();
   return (
-   <div>
+   <motion.div classname="contact-us-page" initial={{ width: 0 }} animate={{ width: "100%"}} exit={{ x: window.innerWidth, transition: { duration: 0.5}}}>
+      <div>
+        <img src={require("../CompScope.png")} alt="#" style={{width:"100%", height:"400px"}}></img>
+      </div>
       <Box component="div" className={classes.contactContainer}>
-        <Grid container justify="center">
+        <Grid container justify="center" style={{marginTop:"-120px"}}>
           <Box component="form" className={classes.form}>
             <Typography variant="h5" className={classes.heading}>
-              Hire or Contact me...
+               Contact me...
             </Typography>
             <InputField
               fullWidth={true}
@@ -105,8 +111,9 @@ const Contact = () => {
           </Box>
         </Grid>
       </Box>
+      <Particles />
       <Footer2 />
-   </div>
+   </motion.div>
 
     
   );

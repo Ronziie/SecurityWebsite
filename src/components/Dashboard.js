@@ -39,6 +39,7 @@ import TaskList from "../DashAddOn/Tasks/TaskList";
 //import Website from "../DashAddOn/Tasks/Website";
 import Clients from "../DashAddOn/Tasks/Clients";
 import "../material-dashboard-react.css";
+import { motion } from 'framer-motion';
 
 import { website  } from "../DashAddOn/general.jsx";
 
@@ -64,7 +65,7 @@ class Dashboard extends React.Component {
       const { classes } = this.props;
 
       return (
-        <div className="content-container">
+        <motion.div className="content-container" initial={{ width: 0 }} animate={{ width: "100%"}} exit={{ x: window.innerWidth, transition: { duration: 0.4}}}>
           <Row style={{  }}>
             <Col xs={2} sm={2} md={2} lg={1} xl={2} style={{ paddingLeft: 0, }}>
               <SidebarMenu style={{position: "fixed"}}/>
@@ -284,7 +285,7 @@ class Dashboard extends React.Component {
         </Row>
           
 
-        </div>
+        </motion.div>
       );
     }
   }

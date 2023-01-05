@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^5.2.3",
     "chartist-plugin-tooltips-updated": "^0.1.4",
+    "framer-motion": "^4.1.17",
     "i": "^0.3.6",
     "npm": "^9.2.0",
     "prop-types": "^15.8.1",

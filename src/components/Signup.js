@@ -4,6 +4,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import '../Main.css';
 import logo from '../images/login.svg'
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 
 export default function Signup() {
@@ -44,7 +45,7 @@ export default function Signup() {
   return (
         <Container style={{padding:0 }}>
 
-                  <div className="App">
+                  <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%"}} exit={{ x: window.innerWidth, transition: { duration: 0.4}}}>
                     <h1>Welcome</h1>
                     <span className='logo'>
                       <img src={logo} alt="logo"></img>
@@ -67,7 +68,7 @@ export default function Signup() {
                       </Col>
                       <Col></Col>
                     </Row>
-                  </div>
+                  </motion.div>
         </Container>
 
   )

@@ -1,12 +1,18 @@
 import React from 'react'
 import '../Main.css'
 import Footer2 from './Footer2'
+import { motion } from 'framer-motion';
+import Particles from "./Particles";
+
 
 export default function Portfolio() {
   return (
 
-    <div>
+    <motion.div initial={{ width: 0 }} animate={{ width: "100%"}} exit={{ x: window.innerWidth, transition: { duration: 0.4}}}>
         <div className='about-us'>
+          <div className='about-us-image' style={{width:"100%", height:"200px", backgroundColor:"red"}}>
+          <img src={require("../docassesment.png")} alt="#" style={{width:"100%", height:"300px"}}></img>
+          </div>
           <div className='about-us-title'>About Us</div>
           <div className='about-us-content' style={{overflowY:"scroll", height: "600px"}}>
 
@@ -31,8 +37,9 @@ export default function Portfolio() {
             </p>
           </div>
         </div>
+        <Particles />
         <Footer2 />
-    </div>
+    </motion.div>
     
   )
 }

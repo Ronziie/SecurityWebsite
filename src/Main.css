@@ -164,13 +164,16 @@
 }
 .service-card {
     padding: 0;
-    margin-left: 100px;
     margin-top: 40px;
+    justify-content: center;
+    align-items: center;
 }
 .service-card-2 {
     padding: 0;
-    margin-left: 100px;
     margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+
 }
 .security-benefits-container {
     /*background-color: white;*/
@@ -285,7 +288,7 @@
     color: white;
     justify-content: center;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 130px;
 }
 .about-us-content {
     display: flex;
@@ -296,7 +299,7 @@
     border-color: white;
     padding: 20px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 
 
 }
@@ -317,4 +320,7 @@
 }
 .true {
     font-size: 200px;
+}
+.contact-us-page {
+    
 }

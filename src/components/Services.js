@@ -1,6 +1,8 @@
 import React from 'react'
 import '../Main.css';
 import Footer2 from './Footer2';
+import Particles from './Particles';
+import  { Collapse } from 'react-bootstrap'
 import { Carousel } from 'react-bootstrap';
 import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 import Card from 'react-bootstrap/Card'
@@ -12,11 +14,13 @@ import { TbCertificate } from 'react-icons/tb';
 import { GiPoliceOfficerHead } from 'react-icons/gi';
 import { TfiTimer } from 'react-icons/tfi';
 import { BsGraphDown } from 'react-icons/bs';
+import { motion } from 'framer-motion'
+
 
 
 export default function Services() {
   return (
-    <div className='services-container' >
+    <motion.div className='services-container' initial={{ width: 0 }} animate={{ width: "100%"}} exit={{ x: window.innerWidth, transition: { duration: 0.4} }}>
       <div className='Carousel-1'>
           <Carousel>
             <Carousel.Item>
@@ -47,23 +51,26 @@ export default function Services() {
           </Carousel>
       </div>
 
-      <div className='services-description'>
+      <motion.div className='services-description' initial={{ opacity: 0 }} animate={{ opacity: 1}} exit={{ opacity: 0}}>
         <div className='services-description-title'>
                   <h1>Looking for a Professional Security Solution for your Business?</h1>
         </div>
         <div className='services-description-caption'>
+          
+              
             <p> Founded in 1993, we Support Services provides professional security solutions across the UK. We work closely with the public and private sectors, and are expert suppliers to a wide range of industries.
 
                 We'll work directly with you to create a bespoke security package that ticks all the boxes, ensuring we always address your security concerns. Our mission is to provide first-class security solutions, at a reasonable price, that always ensure your business, assets and people are properly protected.
 
                 If you're looking for a motivated, reliable and customer-oriented security company in the UK, choose Churchill Support Services today.
             </p>
-        </div>
-      </div>
 
-      <div className='service-card'>
+        </div>
+      </motion.div>
+
+      <motion.div className='service-card' animate={{scale: [1,2,2,1,1], rotate:[0,0,270,270,0], borderRadius:["20%", "20%", "50%", "50%", "20%"],}}>
         <Row>
-          <Col>
+          <Col style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
             <Card style={{ width: '18rem', borderRadius: '10px', borderColor: 'white', borderWidth:'5px'}}>
               <Card.Img variant="top" src={require("../images/card-sec-guard.jpg")} />
               <Card.Body>
@@ -77,7 +84,7 @@ export default function Services() {
           </Col>
 
 
-          <Col>
+          <Col style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
             <Card style={{ width: '18rem', borderRadius: '10px', borderColor: 'white', borderWidth:'5px'}}>
               <Card.Img variant="top" src={require("../images/events-sec.jpg")} />
               <Card.Body>
@@ -90,7 +97,7 @@ export default function Services() {
             </Card>
           </Col>
 
-          <Col>
+          <Col style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
             <Card style={{ width: '18rem',height:'27rem', borderRadius: '10px', borderColor: 'white', borderWidth:'5px'}}>
               <Card.Img variant="top" src={require("../images/vaultsec.jpg")} />
               <Card.Body>
@@ -106,10 +113,10 @@ export default function Services() {
         </Row>
 
 
-      </div>
-      <div className='service-card-2'>
+      </motion.div>
+      <motion.div className='service-card-2' animate={{scale: [1,2,2,1,1], rotate:[0,0,270,270,0], borderRadius:["20%", "20%", "50%", "50%", "20%"],}}>
         <Row>
-          <Col>
+          <Col style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
             <Card style={{ width: '18rem', borderRadius: '10px', borderColor: 'white', borderWidth:'5px'}}>
                 <Card.Img variant="top" src={require("../images/cctvguard.jpg")} />
                 <Card.Body>
@@ -123,7 +130,7 @@ export default function Services() {
           </Col>
 
 
-          <Col>
+          <Col style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
             <Card style={{ width: '18rem', borderRadius: '10px', borderColor: 'white', borderWidth:'5px'}}>
                 <Card.Img variant="top" src={require("../images/dogsec.jpg")} />
                 <Card.Body>
@@ -137,7 +144,7 @@ export default function Services() {
           </Col>
 
 
-          <Col>
+          <Col style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
             <Card style={{ width: '18rem', borderRadius: '10px', borderColor: 'white', borderWidth:'5px'}}>
                 <Card.Img variant="top" src={require("../images/response.jpg")} />
                 <Card.Body>
@@ -152,7 +159,7 @@ export default function Services() {
         </Row>
 
         
-      </div>
+      </motion.div>
 
       <div className='security-benefits-container'>
         
@@ -225,11 +232,11 @@ export default function Services() {
         </div>
 
       </div>
-
+      <Particles />
       <Footer2 />
 
 
-
-    </div>
+    
+    </motion.div>
   )
 }
