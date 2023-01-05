@@ -72,7 +72,7 @@ class Dashboard extends React.Component {
             </Col>
             <Col xs={10} sm={10} md={10}  lg={11} xl={10} style={{ paddingLeft: 0,  }}>
               <GridContainer>
-                <GridItem xs={12} sm={6} md={3}>
+                <GridItem xs={10} sm={6} md={3}  style={{marginLeft:"30px"}}>
                   <Card>
                     <CardHeader color="warning" stats icon>
                       <CardIcon color="warning">
@@ -95,7 +95,7 @@ class Dashboard extends React.Component {
                     </CardFooter>
                   </Card>
                 </GridItem>
-                <GridItem xs={12} sm={6} md={3}>
+                <GridItem xs={10} sm={6} md={3}  style={{marginLeft:"30px"}}>
                   <Card>
                     <CardHeader color="success" stats icon>
                       <CardIcon color="success">
@@ -112,7 +112,7 @@ class Dashboard extends React.Component {
                     </CardFooter>
                   </Card>
                 </GridItem>
-                <GridItem xs={12} sm={6} md={3}>
+                <GridItem xs={10} sm={6} md={3}  style={{marginLeft:"30px"}}>
                   <Card>
                     <CardHeader color="danger" stats icon>
                       <CardIcon color="danger">
@@ -129,7 +129,7 @@ class Dashboard extends React.Component {
                     </CardFooter>
                   </Card>
                 </GridItem>
-                <GridItem xs={12} sm={6} md={3}>
+                <GridItem xs={10} sm={6} md={3} style={{marginLeft:"30px"}}>
                   <Card>
                     <CardHeader color="info" stats icon>
                       <CardIcon color="info">
