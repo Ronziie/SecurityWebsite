@@ -2,7 +2,6 @@ import React from 'react'
 import '../Main.css';
 import Footer2 from './Footer2';
 import Particles from './Particles';
-import  { Collapse } from 'react-bootstrap'
 import { Carousel } from 'react-bootstrap';
 import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 import Card from 'react-bootstrap/Card'
