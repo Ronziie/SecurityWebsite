@@ -1,5 +1,6 @@
 body {
-  background: url(healthcare.png) no-repeat center center fixed;
+  /*background: url(healthcare.png) no-repeat center center fixed;*/
+  background-color: #FFFDFA ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

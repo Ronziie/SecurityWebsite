@@ -1,11 +1,13 @@
 .mainContainer {
-    background: url(stethoscope.jpg) no-repeat center center fixed;
+    background: url(healthcare.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
 }
+
+  
 
 .App {
     display: block;
@@ -280,7 +282,7 @@
 
 .about-us {
     background-color: #233;
-    height: 1000px;
+    height: 1800px;
 
 }
 .about-us-title {

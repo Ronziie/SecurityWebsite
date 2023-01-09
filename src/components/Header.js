@@ -3,6 +3,8 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
+import Navbar from "./Navbar";
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -43,22 +45,26 @@ const Header = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.typedContainer}>
-      <Typography className={classes.title} variant="h4">
-        <Typed strings={["Company Name"]} typeSpeed={40} />
-      </Typography>
+    <div >
+      <Navbar />
+        <Box className={classes.typedContainer}>
+        <Typography className={classes.title} variant="h4">
+          <Typed strings={["Company Name"]} typeSpeed={40} />
+        </Typography>
 
-      <Typography className={classes.subtitle} variant="h5">
-        <Typed
-          strings={[
-            "Company Motto",
-          ]}
-          typeSpeed={40}
-          backSpeed={50}
-          loop
-        />
-      </Typography>
-    </Box>
+        <Typography className={classes.subtitle} variant="h5">
+          <Typed
+            strings={[
+              "Company Motto",
+            ]}
+            typeSpeed={40}
+            backSpeed={50}
+            loop
+          />
+        </Typography>
+      </Box>
+    </div>
+
   );
 };
 

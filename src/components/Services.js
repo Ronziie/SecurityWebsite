@@ -13,13 +13,15 @@ import { TbCertificate } from 'react-icons/tb';
 import { GiPoliceOfficerHead } from 'react-icons/gi';
 import { TfiTimer } from 'react-icons/tfi';
 import { BsGraphDown } from 'react-icons/bs';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import Navbar from './Navbar';
 
 
 
 export default function Services() {
   return (
     <motion.div className='services-container' initial={{ width: 0 }} animate={{ width: "100%"}} exit={{ x: window.innerWidth, transition: { duration: 0.4} }}>
+      <Navbar />
       <div className='Carousel-1'>
           <Carousel>
             <Carousel.Item>

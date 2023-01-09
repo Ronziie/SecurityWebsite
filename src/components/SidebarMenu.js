@@ -14,6 +14,7 @@ import image from '../images/sidebar-4.jpg'
 import { useNavigate } from 'react-router-dom';
 
 
+
 export default function SidebarMenu() {
 
     const [isMobile, setIsMobile] = useState(false)
@@ -25,6 +26,25 @@ export default function SidebarMenu() {
       return navigate("/")
     }
 
+    const NavToProfile = () => {
+      return navigate("/admin/profile")  
+    }
+    const NavToAdmin = () => {
+      return navigate("/admin")  
+    }
+    const NavToMaps = () => {
+      return navigate("/admin/maps")  
+    }
+    const NavToNotifications = () => {
+      return navigate("/admin/notifications")  
+    }
+    const NavToSupport = () => {
+      return navigate("/admin/support")  
+    }
+    const NavToAnalytics = () => {
+      return navigate("/admin/analytics")   
+    }
+
     //function collapseSidebar if 
 
     useEffect(() => {
@@ -33,12 +53,12 @@ export default function SidebarMenu() {
 
 
     const handleResize = () => {
-      if (window.innerWidth > 450) {
+      if (window.innerWidth > 1390) {
         setIsMobile(true);
       } else {
         setIsMobile(false);
       }
-    }
+    } 
 
   return (
     <div  className='sidebarmenu' style={{ display: 'flex', height: '100vh' }}>
@@ -52,7 +72,7 @@ export default function SidebarMenu() {
                       <RiDashboardFill />  Dashboard
                       </MenuItem>
 
-                      <MenuItem style={{marginTop:"50px", marginBottom:"50px"}}> 
+                      <MenuItem style={{marginTop:"50px", marginBottom:"50px"}} onClick={NavToProfile}> 
                         <CgProfile /> User Profile
                       </MenuItem>
 
@@ -86,27 +106,27 @@ export default function SidebarMenu() {
       <div className='false' style={{height: '100%', display: 'flex', position: "fixed"}}>
             <Sidebar defaultCollapsed={true} collapsedWidth="60px" image={image}>
                 <Menu>
-                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}> 
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}} onClick={NavToAdmin}> 
                     <RiDashboardFill />  Dashboard
                   </MenuItem>
 
-                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}> 
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}} onClick={NavToProfile}> 
                     <CgProfile /> User Profile
                   </MenuItem>
 
-                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}> 
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}} onClick={NavToMaps}> 
                       <SiGooglemaps /> Maps
                   </MenuItem>
 
-                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}> 
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}} onClick={NavToNotifications}> 
                       <MdNotificationsActive /> Notifications
                   </MenuItem>
 
-                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}> 
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}} onClick={NavToSupport}> 
                     <BiSupport/> R-Support
                   </MenuItem>
 
-                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}}>
+                  <MenuItem style={{marginTop:"30px", marginBottom:"30px"}} onClick={NavToAnalytics}>
                     <TbDeviceAnalytics  />  Analytics
                   </MenuItem>
                   

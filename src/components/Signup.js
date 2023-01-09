@@ -5,6 +5,7 @@ import '../Main.css';
 import logo from '../images/login.svg'
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Navbar from "./Navbar";
 
 
 export default function Signup() {
@@ -43,7 +44,9 @@ export default function Signup() {
   }*/
 
   return (
+        
         <Container style={{padding:0 }}>
+          <Navbar />
 
                   <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%"}} exit={{ x: window.innerWidth, transition: { duration: 0.4}}}>
                     <h1>Welcome</h1>

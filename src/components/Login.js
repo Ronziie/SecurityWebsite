@@ -4,6 +4,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import '../Main.css';
 import userAvatar from '../images/usersvg.svg'
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 
 
 export default function Login() {
@@ -17,7 +18,7 @@ export default function Login() {
   //if details inputted are same as credentials in LocalStorage show message
   const LoginButton = () => {
     if (usernameLogin === Usercredentials && passwordLogin === Passcredentials) {
-      return navigate("/Dashboard")
+      return navigate("/admin")
     } else {
       return window.alert("INCORRECT USERNAME OR PASSWORD PLEASE CHECK DETAILS") 
     }
@@ -31,6 +32,7 @@ export default function Login() {
 
   return (
         <Container style={{padding:0 }}>
+          <Navbar />
 
                   <div className="App">
                     <h1>Welcome Back!</h1>

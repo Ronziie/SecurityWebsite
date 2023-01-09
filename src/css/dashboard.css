@@ -1,0 +1,47 @@
+.full-admin-container {
+    background-color: #FFFDFA !important;
+    width: 100vw;
+    height: 100vh !important;
+}
+
+
+.main {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+/*========PROFILE=====*/
+
+.admin-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -300px;
+    width: 100%;
+    height: 1000px;
+    background-color:red;
+
+}
+.avatar-icon {
+    display: flex;
+    color: black;
+    font-size: 300px; 
+    width: fit-content;
+    border-radius: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black !important;
+    
+}
+
+.User {
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.User-Options-1 {
+
+}

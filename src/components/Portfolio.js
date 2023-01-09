@@ -3,12 +3,14 @@ import '../Main.css'
 import Footer2 from './Footer2'
 import { motion } from 'framer-motion';
 import Particles from "./Particles";
+import Navbar from "./Navbar";
 
 
 export default function Portfolio() {
   return (
 
     <motion.div initial={{ width: 0 }} animate={{ width: "100%"}} exit={{ x: window.innerWidth, transition: { duration: 0.4}}}>
+      <Navbar />
         <div className='about-us'>
           <div className='about-us-image' style={{width:"100%", height:"200px", backgroundColor:"red"}}>
           <img src={require("../docassesment.png")} alt="#" style={{width:"100%", height:"300px"}}></img>

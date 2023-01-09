@@ -10,6 +10,7 @@ import Send from "@material-ui/icons/Send";
 import { motion } from 'framer-motion';
 import '../Main.css';
 import Particles from "./Particles";
+import Navbar from "./Navbar";
 
 
 
@@ -70,6 +71,7 @@ const Contact = () => {
   const classes = useStyles();
   return (
    <motion.div classname="contact-us-page" initial={{ width: 0 }} animate={{ width: "100%"}} exit={{ x: window.innerWidth, transition: { duration: 0.5}}}>
+    <Navbar />
       <div>
         <img src={require("../CompScope.png")} alt="#" style={{width:"100%", height:"400px"}}></img>
       </div>
